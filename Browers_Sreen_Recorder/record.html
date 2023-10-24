@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/recordstyle.css">
+    <title>Screen Recorder</title>
+</head>
+<body>
+    
+
+    <h1>Screen Recorder</h1>
+    <div id="video-container">
+        <video id="video" autoplay></video>
+    </div>
+    <div id="volume-slider-container">
+        <input type="range" id="volumeSlider" class="custom-slider" min="0" max="1" step="0.01" value="0">
+    </div>
+    <div id="buttons">
+        <button id="startButton">Ekran Paylaşımını Başlat</button> <!-- Ekran paylaşımını başlatmak için bir buton -->
+        <button id="stopButton" disabled>Ekran Paylaşımını Durdur</button> <!-- Ekran paylaşımını durdurmak için bir buton -->
+    </div>
+    <div id="downloadLinks">
+     
+    </div>
+    
+
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script> <!-- Recorder.js kütüphanesini yükle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.0/lame.min.js"></script>
+
+
+
+    <script src="assets/js/recordscript.js"></script>
+</body>
+</html>
